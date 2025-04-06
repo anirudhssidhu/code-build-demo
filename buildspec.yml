@@ -12,10 +12,8 @@ phases:
         commands:
             - echo "Running on $MY_AWS_REGION"
             - echo "Print Environment Variables"
-            - printenv
             - echo "Start the installation process"
             - echo "Installation Process Completed"
-            - echo "Hey Welcome to AWS $name"
     pre_build:
         commands: 
             - echo "This is the start of Pre-Build phase"
@@ -36,4 +34,3 @@ phases:
 artifacts:
     files:
         - '**/*'
-    
